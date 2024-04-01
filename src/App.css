@@ -15,7 +15,7 @@ html{
 }
 /* put background image */
 body{
-background-image: url('masjed.png');
+background-image: url('assets/masjed.png');
 background-position: center center;
 background-size: cover;
 
