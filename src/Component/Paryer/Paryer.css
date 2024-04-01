@@ -1,0 +1,37 @@
+.card{
+  transition: all .3s ease-in-out;
+}
+
+/* this class for just next paryer */
+.nextParyerclass{
+  transform: translate(0px, -40px);
+  animation-name: upAnimate;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    animation-fill-mode:both;
+    animation-direction:alternate;
+    border: 3px solid #165ace;
+    color:#124caf;
+}
+
+/* style for button athan Aduio */
+.athanAduio{
+  width: 100%;
+  text-align: center;
+}
+.athanAduio .athan{
+  width: 95%;
+  border: 3px solid #165ace;
+  border-radius: 30px;
+}
+/* This Animation for active next prayers */
+@keyframes upAnimate {
+  0%{
+    transform: translate(0px, -40px)
+  }
+
+  100%{
+    transform: translate(0px, 40px)
+  }
+}

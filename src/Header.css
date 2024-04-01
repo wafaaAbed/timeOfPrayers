@@ -1,0 +1,73 @@
+/* styling for header */
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 3rem;
+  font-size: larger;
+  padding-bottom: 3rem;
+}
+/* to divide secreen between divss of timimg */
+.timing,.headerCountry{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #85858598;
+  padding: 1rem;
+  width: 100%;
+}
+.timingFormat{
+  display: flex;
+  flex-direction: column;
+
+}
+.timingNow{
+  width: 50%;
+}
+.selectSection{
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.selectSection select{
+  width: 30%;
+  margin-right: 1.2rem;
+  background-color: transparent;
+  background-color: #fff;
+  color:#333;
+}
+/* for list Drop of cites */
+.selectSection select option:hover{
+  
+    cursor: pointer;
+
+  }
+  .selectSection select:hover{
+    
+    cursor: pointer;
+    }
+.country{
+  width: 50%;
+}
+/* this media query to small screens */
+@media (max-width: 768px) { 
+  .timing,.headerCountry{
+  flex-direction: column;
+  row-gap: 20px;
+align-items: flex-start;
+
+}
+.selectCountry select{
+  width: 100px !important;
+}
+.selectSection{
+  width: 100%;
+}
+.timingFormat{
+  width: 100%;
+}
+}

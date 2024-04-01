@@ -1,0 +1,64 @@
+
+/* =========
+=Global CSS=
+=========== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* to the screen tb right direction */
+html{
+  direction: rtl;
+  
+}
+/* put background image */
+body{
+background-image: url('masjed.jpg');
+background-position: center center;
+background-size: cover;
+
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color:#fff;
+}
+
+/* the main section of site */
+.main{
+width: 100%;
+height: auto;
+background-color: #333333c3;
+margin-bottom: 50px;
+padding-bottom: 50px;
+}
+
+/* to be paryer in flex desgin */
+.paryer{
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* the style for Athan Sound */
+.soundBtn{
+  border: 2px solid rgb(0,166,237);;
+  width: 50px;;
+  transition: all .3s ease-in-out;
+}
+.soundBtn .icons{
+  text-align: center;
+  padding: .5rem;
+  color:rgb(0,166,237);
+
+  font-size: 22px;
+;
+
+  
+}
+/* this media query to  medium and small secreen*/
+@media (max-width: 1200px) {
+  .paryer{
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+ }
