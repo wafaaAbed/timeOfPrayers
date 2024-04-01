@@ -131,7 +131,7 @@ function App() {
   
     // get next salah Moment then subtract from it the hour and minute and milsecond of now time.
     nextsalahMoment.toString();
-    console.log(nextsalahMoment.format("hh"))
+    // console.log(nextsalahMoment.format("hh"))
     nextsalahMoment.subtract({
       h:Number(hourNow),
       m: Number(minuteNow),
@@ -150,7 +150,7 @@ function App() {
 if(remaningmilsecond === '00' && remaningHour === '00' && remaningminute === '00' ){
   play();
 }  
-console.log(nextsalahMoment.format("hh"))
+// console.log(nextsalahMoment.format("hh"))
 };
 // using useSound hook to put Athan Sound when remaningTime will be "00:00:00"
   const [isChecked, setIsChecked] = useState(null);
